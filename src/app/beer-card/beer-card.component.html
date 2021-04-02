@@ -1,0 +1,7 @@
+<div [routerLink]="['/beer' , beer.id]" class="inner-beer-card" >
+  <!-- DU PROPERTY BINDING POUR RECUPERER DANS SRC L'URL DE L'IMAGE -->
+  <img class="beer-img" [src]="beer.image_url" alt="Photo de ma biere" />
+  <!-- DU STRING INTERPOLATION POUR AFFICHE LE NOM DE LA BIERE -->
+  <h5 class="m-5">{{ beer.name }}</h5>
+  <button [routerLink]="['/beer' , beer.id]" class="btn btn-secondary">En savoir plus</button>
+</div>
