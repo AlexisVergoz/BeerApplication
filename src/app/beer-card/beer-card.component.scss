@@ -1,0 +1,18 @@
+div.inner-beer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+
+  h5 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  img.beer-img {
+    max-height: 250px;
+    max-width: 100%;
+  }
+}
