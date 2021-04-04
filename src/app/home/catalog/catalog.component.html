@@ -1,0 +1,13 @@
+<div class="container">
+  <h2 class="m-3 text-center">Mon catalogue de bière</h2>
+  <ul class="list-group list-group-flush">
+    <!-- JE FAIS UNE BOUCLE SUR LE TABLEAU NOMME 'CATALOG' -->
+    <!-- A CHAQUE ITERATION DE LA BOUCLE , LES DONNEES SONT STOCKES -->
+    <!-- DANS MA VARIABLE NOMME 'ITEM' -->
+    <li [routerLink]="['/beer' , item.id]" class="list-group-item" *ngFor="let item of catalog">
+      <!-- J'AFFICHE LE NOM ET LE DEGRE d'ALCOOL DE CHAQUE BIERE
+      LE 'NAME' ET LE 'ABV' SONT DES DONNES DE L'API -->
+      {{item.name}} avec {{item.abv}} degre d'alcool
+    </li>
+  </ul>
+  </div>
