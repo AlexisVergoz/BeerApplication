@@ -1,0 +1,12 @@
+
+<div class="container">
+  <h2 class="m-3 text-center">Nos bières à la une</h2>
+  <div class="row">
+<!-- ON BOUCLE SUR l'ATTRIBUT DE CLASSE 'BEERS' (QUI EST UN TABLEAU) -->
+<!-- ON APELLE LE COMPONENT BEER-CARD AVEC A CHAQUE ITERATION UNE BIERE DU TABLEAU ('LET BEER') -->
+      <app-beer-card
+      class="col border m-2 p-2 beer-card"
+      *ngFor="let beer of beers" [beer]="beer">
+    </app-beer-card>
+  </div>
+</div>
